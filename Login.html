@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Aula Bootstrap</title>
+    <title>Login</title>
     <link href="./css/bootstrap.min.css" rel="stylesheet" />
-    <script src="./JS.js"></script>
+    <script src="./JS.js">script JS</script>
 </head>
 <body>
 
@@ -19,7 +19,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="https://www.youtube.com/channel/UCqvKPpyDSYB0omDzGde63Sw">Link</a>
@@ -48,41 +48,22 @@
     </nav>
 
     <div class="container">
-
-        <h1>Aula Bootstrap</h1>
-
-        <div class="row">
-
-            <div class="col-sm">
-
-                <form method="post" action="/" id="formBoot">
-                    <div class="form-group">
-                        <label for="nomeBoot">Nome</label>
-                        <input type="email" class="form-control" id="nomeBoot" placeholder="Digite seu nome"></input>
-                    </div>
-                    <div class="form-group">
-                        <label for="emailBoot">E-mail</label>
-                        <input type="email" class="form-control" id="emailBoot" placeholder="Digite seu email"></input>
-                    </div>
-                    <div>
-                        <label for="senhaBoot">Senha</label>
-                        <input type="password" class="form-control" id="senhaBoot" placeholder="Digite sua senha"></input>
-                    </div>
-                    <br />
-                    <div class="mb-3 form-check">
-                        <input type="checkbox" class="form-check-input" id="emailCheckbox">
-                        <label class="form-check-label" for="emailCheckbox">Receber emails promocionais?</label>
-                    </div>
-                    <button type="button" class="btn btn-primary" id="buttonBoot" onclick="registerTry()">Enviar</button>
-                </form>
-
-
-
+        <h1>Login</h1>
+        <form method="post" action="/" id="formBoot">
+            <div class="form-group">
+                <label for="nomeLogin">Nome</label>
+                <input type="email" class="form-control" id="nomeLogin" placeholder="Digite seu nome"></input>
             </div>
-
-        </div>
+            <div class="form-group">
+                <label for="senhaLogin">Senha</label>
+                <input type="password" class="form-control" id="senhaLogin" placeholder="Digite sua senha"></input>
+            </div>
+            <label id="ErroLogin"></label>
+            <br />
+            <br />
+            <button type="button" class="btn btn-primary" id="buttonBoot" onclick="loginTry()">Enviar</button>
+        </form>
     </div>
-
     <script src="./js/jquery-3.6.3.min.js"></script>
     <script src="./js/popper.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
